@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900);
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  background: linear-gradient(285.88deg, #f2f2f2 0%, #e7e7e7 100%);
+  color: #000;
+  font-size: 10px;
+}
+
+.home__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(var(--vh, 1vh) * 100);
+  padding: 2rem 1rem;
+  position: relative;
+}
+.home__circle {
+  position: absolute;
+}
+.home__circle-1 {
+  top: 40px;
+  right: 40px;
+}
+.home__circle-2 {
+  top: 27%;
+  right: 0;
+  max-width: 340px;
+  width: 100%;
+}
+.home__icon {
+  width: 150px;
+}
+.home__title {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 240px;
+  margin-top: 1rem;
+}
+.home__img {
+  align-self: flex-end;
+  width: 220px;
+}
+.home__link {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #fff;
+  background: #ff6a13;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 1.3rem 0;
+}
+@media screen and (min-width: 1099px) {
+  .home {
+    overflow: hidden;
+    position: relative;
+  }
+  .home__wrap {
+    justify-content: center;
+    /*max-width: 1000px;
+    margin: 0 auto;*/
+  }
+  .home__circle-1 {
+    width: 90px;
+    right: 20%;
+  }
+  .home__circle-2 {
+    top: auto;
+    bottom: -60px;
+    max-width: 50%;
+  }
+  .home__icon {
+    position: absolute;
+    top: 50px;
+  }
+  .home__title {
+    font-size: 6.4rem;
+    line-height: 7rem;
+  }
+  .home__img {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 25%;
+  }
+  .home__link {
+    max-width: 300px;
+    margin-top: 8rem;
+  }
+}
